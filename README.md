@@ -15,6 +15,11 @@ This project is a modified and adapted derivative of the open-source project [ci
 - **Original licence**: Apache-2.0
 - **This project’s licence**: **Apache-2.0** (see the [LICENSE](LICENSE) file for details)
 
+-
+-
+Please note: This project has been specifically optimised for the ‘modelscope’ server domain; running it on a server with a different domain name or IP address may result in errors. Please modify the script yourself before use. This project does not include model files.
+
+
 ### Modification Notes
 
 - This project has undergone code refactoring and adaptation with the assistance of AI-assisted tools (including, but not limited to, DeepSeek-Flash-0731 and GLM-5.2).
@@ -49,8 +54,8 @@ This project is a modified and adapted derivative of the open-source project [ci
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/youname/xxx.git
-cd repository_name
+git clone https://github.com/iaoz92/Wan-2.2-I2V-14B-Lightning-NSFW-CAN_AMD.git
+cd Wan-2.2-I2V-14B-Lightning-NSFW-CAN_AMD
 
 # 2. Create a virtual environment (recommended)
 python -m venv venv
@@ -62,5 +67,5 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm5
 
 # 4. Install other dependencies
 pip install -r requirements.txt
--
-Please note: This project has been specifically optimised for the ‘modelscope’ server domain; running it on a server with a different domain name or IP address may result in errors. Please modify the script yourself before use. This project does not include model files.
+
+The End
