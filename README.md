@@ -14,10 +14,7 @@ This project is a modified and adapted derivative of the open-source project [ci
 - **Original project**: [cinderholm/wan2-2-i2v-v3](https://huggingface.co/spaces/cinderholm/wan2-2-i2v-v3) (Hugging Face Space)
 - **Original licence**: Apache-2.0
 - **This project’s licence**: **Apache-2.0** (see the [LICENSE](LICENSE) file for details)
-
--
--
-Please note: This project has been specifically optimised for the ‘modelscope’ server domain; running it on a server with a different domain name or IP address may result in errors. Please modify the script yourself before use. This project does not include model files.
+- Please note: This project has been specifically optimised for the ‘modelscope’ server domain; running it on a server with a different domain name or IP address may result in errors. Please modify the script yourself before use. This project does not include model files.
 
 
 ### Modification Notes
