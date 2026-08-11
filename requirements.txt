@@ -1,0 +1,25 @@
+# 魔搭创空间 (ModelScope Studio) 改版依赖
+# 注意：torch / torchvision / cuda 由创空间镜像预装，此处不钉版本，
+# 避免与镜像环境冲突（原 HF 版钉 torch==2.11.0 是 ZeroGPU 环境专属）。
+
+diffusers==0.38.0
+transformers==4.57.6
+accelerate==1.13.0
+safetensors
+sentencepiece
+peft==0.19.1
+ftfy
+imageio
+imageio-ffmpeg
+opencv-python
+
+# torchao 用于 FP8/INT8 量化（14B 模型在 xGPU 上必需，否则显存不够）。
+# 若与镜像 torch 版本不兼容装不上，app.py 会自动跳过量化（会警告并更吃显存）。
+torchao==0.17.0
+
+# gradio 版本按创空间自带即可；如需完整 UI 特性（clipboard 上传等）建议 >=4.44
+# gradio>=4.44
+#
+# 注意：不要钉 huggingface-hub 1.x！transformers==4.57.6 要求 hub<1.0，
+# 而创空间自带的 gradio 6.x 要求 hub>=1.16，二者不可调和。保持不钉 hub，
+# 让 pip 装 transformers 兼容的 0.3x 版本；gradio 的版本告警无害（平台自带环境已验证可运行）。
