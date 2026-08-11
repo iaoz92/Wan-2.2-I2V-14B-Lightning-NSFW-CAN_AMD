@@ -4,7 +4,6 @@ The original files come from the Hugging Face project (open source); after being
 # Wan2.2 I2V – AMD GPU Optimised Version
 
 This project is a modified and adapted derivative of the open-source project [cinderholm/wan2-2-i2v-v3] (https://huggingface.co/spaces/cinderholm/wan2-2-i2v-v3) on Hugging Face. Its primary objective is to port the original project to run on **AMD GPUs** and to utilise ROCm to accelerate image-to-video (I2V) tasks.
-
 ---
 
 ## ⚠️ Important Notice
@@ -15,7 +14,7 @@ This project is a modified and adapted derivative of the open-source project [ci
 - **Original licence**: Apache-2.0
 - **This project’s licence**: **Apache-2.0** (see the [LICENSE](LICENSE) file for details)
 - Please note: This project has been specifically optimised for the ‘modelscope’ server domain; running it on a server with a different domain name or IP address may result in errors. Please modify the script yourself before use. This project does not include model files.
-
+- Note: As AMDGPU does not support FP8 quantisation, this project runs at full capacity and consumes a significant amount of GPT graphics memory. It is recommended that devices equipped with AMD graphics cards and at least 80Gb of graphics memory try this.
 
 ### Modification Notes
 
